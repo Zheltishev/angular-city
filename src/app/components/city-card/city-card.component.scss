@@ -1,0 +1,70 @@
+.city-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-block: 20px;
+  border-top: 1px solid #D3D4DB;
+}
+
+.city-card__image {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.city-card__info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.city-card__info-header {
+  display: flex;
+  gap: 20px;
+}
+
+.city-card__info-header h2 {
+  color: var(--dark-color);
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+.city-card__icon-star {
+  width: 16px;
+  height: 16px;
+}
+
+.city-card__info p {
+  color: var(--grey-color);
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+.city-card.grid {
+  height: 100%;
+  flex-direction: column;
+  max-width: 320px;
+  border: none;
+  background-color: var(--light-color);
+  border-radius: 8px;
+  padding: 0 0 20px 0;
+
+  .city-card__image {
+    width: 320px;
+    height: 188px;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .city-card__info {
+    gap: 20px;
+    padding-inline: 20px;
+  }
+}

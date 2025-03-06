@@ -1,0 +1,34 @@
+<header>
+  Создание города
+</header>
+
+<main>
+  <div class="create-city__form">
+    <button class="back-page" (click)="goToPageMain()">
+      <img src="assets/images/icons/en-undo.png" alt="back page">
+      назад
+    </button>
+  
+    <div class="create-city__form-field">
+      <p>Название города</p>
+      <input type="text" [(ngModel)]="cityName">
+    </div>
+  
+    <div class="create-city__form-field">
+      <p>Описание города</p>
+      <textarea [(ngModel)]="cityDescription"></textarea>
+    </div>
+  
+    <div class="create-city__form-field">
+      <p>Ссылка на картинку</p>
+      <input type="text" [(ngModel)]="cityImageUrl">
+    </div>
+
+    <button 
+      class="create" 
+      (click)="createCity()"
+    >
+      Создать
+    </button>
+  </div>
+</main>

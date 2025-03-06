@@ -1,0 +1,64 @@
+:root {
+  --dark-color: #434652;
+  --grey-color: #757986;
+  --light-color: #F2F5FA;
+  --green-color: #21A5B9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  background-color: var(--light-color);
+  height: 117px;
+  padding: 40px 60px;
+  font-weight: 500;
+  font-size: 28px;
+  color: var(--dark-color);
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 60px;
+}
+
+.toggle button {
+  padding: 12px;
+  border: 1px solid #C4C7D1;
+  background-color: #ffffff;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.toggle button:firstst-child {
+ border-radius: 2px 0 0 2px;
+}
+
+.toggle button:nth-child(2) {
+ border-radius: 0 2px 2px 0;
+}
+
+.toggle button.active {
+  background-color: var(--light-color);
+}
+
+.create {
+  background-color: var(--green-color);
+  color: var(--light-color);
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+}

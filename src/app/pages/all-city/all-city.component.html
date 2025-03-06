@@ -1,0 +1,20 @@
+<header>
+  Список городов
+</header>
+
+<nav>
+  <div class="toggle">
+    <button [class.active]="viewMode === 'list'" (click)="setViewMode('list')" >Список</button>
+    <button [class.active]="viewMode === 'grid'" (click)="setViewMode('grid')" >Плитка</button>
+  </div>
+
+  <button class="create" (click)="goToPageNew()">
+    Создать
+  </button>
+</nav>
+
+<main class="{{ viewMode === 'list' ? '' : 'grid' }}">
+  @for (city of cities; track city.id) {
+    <app-city-card [city]="city" [viewMode]="viewMode"></app-city-card>
+  }
+</main>
