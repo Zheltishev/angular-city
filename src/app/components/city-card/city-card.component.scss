@@ -68,3 +68,19 @@
     padding-inline: 20px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .city-card__image {
+    height: 70px;
+  }
+
+  .city-card.grid {
+    height: 100%;
+    max-width: 320px;
+  
+    .city-card__image {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
